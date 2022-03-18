@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rent a Car</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="beginning">
+        <section class="lft">
+            <h1>SunbeamCars Inc.</h1>
+        </section>
+        <section class="rgt">
+            <a href="about.html">About us</a>
+        </section>
+    </section>
+
+    <section class="rent">
+        
+        <form id="form">
+            <h2>Find a car that suits you</h2>
+            
+            <section class="group">
+                <section class="left">
+                    <section class="pick">
+                        <p>I pick it up</p>
+                        <input type="date" id="arrivaldate" name="date" required>
+                    </section>
+                    <section class="range1">
+                        <p>Number of persons</p>
+                        <input type="number" id="range" name="range" min="1" max="7" required>
+                    </section>
+                </section>
+
+                <section class="right">
+                    <section class="hand">
+                        <p>I hand it in</p>
+                        <input type="date" id="departuredate" name="date" required>
+                    </section>
+                    <section class="suitcase1">
+                        <p>Number of suitcases</p>
+                        <datalist id="number">
+                            <option value="0">
+                            <option value="1">
+                            <option value="2"> 
+                            <option value="3">
+                            <option value="4">     
+                            <option value="5"> 
+                            <option value="6">             
+                        </datalist>
+                        <input list="number" name="inputo" id="inputo" required>
+                    </section>
+                </section>
+            </section>
+            <button type="submit">Search</button>
+        </div>
+
+    </section>
+
+    <!--<section class="cars">
+
+        <section class="cimg">
+            <img src="images/suzuki.png" alt="suzuki">
+    	</section>
+
+        <section class="heading">
+            <h2>Suzuki Swift</h2>
+        </section>
+
+        <section class="inf">
+            <p>Category: Minivan</p>
+            <p>Person: 4</p>
+            <p>Suitcase: 2</p>
+        </section>
+
+        <section class="buy">
+            <p>kr. 1643.75</p>
+            <button type="submit">Book Now</button>
+        </section>
+
+    </section>
+
+
+    <section class="cars">
+
+        <section class="cimg">
+            <img src="images/mazda.png" alt="mazda">
+    	</section>
+
+        <section class="heading">
+            <h2>Mazda 3</h2>
+        </section>
+
+        <section class="inf">
+            <p>Category: Car</p>
+            <p>Person: 3</p>
+            <p>Suitcase: 3</p>
+        </section>
+
+        <section class="buy">
+            <p>kr. 880.75</p>
+            <button type="submit">Book Now</button>
+        </section>
+
+    </section>
+
+
+    <section class="cars">
+
+        <section class="cimg">
+            <img src="images/citroen.png" alt="citroen">
+    	</section>
+
+        <section class="heading">
+            <h2>Citroen grand picasso</h2>
+        </section>
+
+        <section class="inf">
+            <p>Category: Citroen</p>
+            <p>Person: 4</p>
+            <p>Suitcase: 3</p>
+        </section>
+
+        <section class="buy">
+            <p>kr. 1420.75</p>
+            <button type="submit">Book Now</button>
+        </section>
+
+    </section>-->
+
+
+    <div id="output"></div>
+    <div id="error"></div>
+    
+    
+    <script src="data.js"></script>
+    <script src="javascript.js"></script>
+    
+
+    
+</body>
+</html>

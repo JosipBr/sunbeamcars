@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rent a Car</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+    <section class="beginning">
+        <section class="lft">
+            <h1>SunbeamCars Inc.</h1>
+        </section>
+        <section class="rgt">
+            <a href="about.html">About us</a>
+        </section>
+    </section>
+
+    <section class="image">
+        <img src="images/accessories.png">
+    </section>
+
+    <section class="three">
+
+        <section class="info">
+            <p><b>Well chosen</b></p>
+            <div id="output"></div>
+        </section>
+
+        <form id="form">
+            <p><b>Select accessories (excl. VAT)</b></p>
+            <section class="check">
+            <input type="checkbox" data-item="Second driver" class="slist" value="199" onchange="calculateTotal(this, this.value)">Second driver, dkr. 199<br><br>
+            <input type="checkbox" data-item="Child seat" class="slist" value="155" onchange="calculateTotal(this, this.value)">Child seat, dkr. 155<br><br>
+            <input type="checkbox" data-item="Roadside aid" class="slist" value="120" onchange="calculateTotal(this, this.value)">Roadside aid, dkr. 120<br><br>
+            <input type="checkbox" data-item="Baby seat" class="slist" value="100" onchange="calculateTotal(this, this.value)">Baby seat, dkr. 100<br><br>
+            <input type="checkbox" data-item="Child seat" class="slist" value="140" onchange="calculateTotal(this, this.value)">Child seat, dkr. 140<br><br>
+            <input type="checkbox" data-item="GPS navigation" class="slist" value="250" onchange="calculateTotal(this, this.value)">GPS navigation, dkr.250<br><br>
+            <input type="checkbox" data-item="Show chains" class="slist" value="188" onchange="calculateTotal(this, this.value)">Show chains, dkr. 188<br><br>
+            <br>
+            </section>
+            <button type="submit">Save</button>
+        </form>
+
+        <div id="totaloutput"></div>
+
+    </section>
+<script src="buy.js"></script>
+
+</body>
